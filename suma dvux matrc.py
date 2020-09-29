@@ -43,10 +43,11 @@ def creat_mas(n, m, k, mas1,mas2):
     return newMas
             
 n = int(input('Размер матрицы 1 (строки): '))
-m = int(input('\nРазмер матрицы 1 (столбцы): '))
+"""m = int(input('\nРазмер матрицы 1 (столбцы): '))
 if (m != int(input('\nРазмер матрицы 2 (строки): '))):
     raise SystemExit("Некорректный ввод!!!")
-k = int(input('\nРазмер матрицы 2 (столбцы): '))
+k = int(input('\nРазмер матрицы 2 (столбцы): '))"""
+m = k = n
 mas1 = []
 mas2 = []
 if (str(input('\nВвод вручную? (y/n): ')) == 'n'):
