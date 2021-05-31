@@ -1,11 +1,11 @@
-n = []
-for i in range(3):
-    n.append(input().split())
-if (n[0] >= 100 || n[1] >= 100 || n[2] >= 100 || n[0] + n[1]> n[2] || n[1] + n[2]> n[0]|| n[2] + n[0]> n[1]):
+a = int(input())
+b = int(input())
+c = int(input())
+if (a >= 100 or b >= 100 or c >= 100 or a + b > c or b + c > a or c + a > b):
     print("NO")
-else: if (n[1] == n[2] && n[0] == n[2])
-    print("RVS")
-else: if (n[1] == n[2] || n[0] == n[2] || n[0] == n[2])
-    print("RVB")
+elif (b == c and a == c):
+        print("RVS")
+elif (b == c or a == c or a == c):
+        print("RVB")
 else:
     print("RZS")
